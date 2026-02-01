@@ -1,0 +1,23 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	Mama: {
+		DisplayName: Mama
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	ShinigamiChest: {
+		DisplayName: Shinigami Chest
+		Tooltip: ""
+	}
+
+	ShinigamiPants: {
+		DisplayName: Shinigami Pants
+		Tooltip: ""
+	}
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckBleach", "DuckBleach.csproj", "{1B33D9FA-820B-39AC-BFE5-006CCDC90A07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B33D9FA-820B-39AC-BFE5-006CCDC90A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B33D9FA-820B-39AC-BFE5-006CCDC90A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B33D9FA-820B-39AC-BFE5-006CCDC90A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B33D9FA-820B-39AC-BFE5-006CCDC90A07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7604508B-E727-47A3-A457-75B88CA55149}
+	EndGlobalSection
+EndGlobal
