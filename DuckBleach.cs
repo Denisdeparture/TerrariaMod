@@ -14,11 +14,7 @@ namespace DuckBleach
         public static DuckBleach Instance;
 
 
-        private const string ShaderPath = "Assets/Effects/";
-
-        public const string CalamityShaderPrefix = "DuckBleach:";
-
-        public const string ShaderName = "Bankai";
+      
 
         public override void Load()
         {
@@ -26,9 +22,7 @@ namespace DuckBleach
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Asset<Effect> BankaiShader = this.Assets.Request<Effect>(ShaderPath + ShaderName);
-
-                Filters.Scene.Bind($"{CalamityShaderPrefix}{ShaderName}", new Filter(new ScreenShaderData(BankaiShader, ShaderName), EffectPriority.Medium));
+                EffectManager.LoadAll();
             }
         }
     }

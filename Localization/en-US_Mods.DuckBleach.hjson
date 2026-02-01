@@ -20,4 +20,11 @@ Items: {
 		DisplayName: Shinigami Pants
 		Tooltip: ""
 	}
+
+	OnexSharck: {
+		DisplayName: Onex Sharck
+		Tooltip: ""
+	}
 }
+
+Projectiles.OnexProjectile.DisplayName: Onex Projectile

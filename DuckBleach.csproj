@@ -9,9 +9,6 @@
 	<PropertyGroup>
 		
 	</PropertyGroup>
-	<ItemGroup>
-	  <Folder Include="Content\Items\Weapons\Ranged\" />
-	</ItemGroup>
 
 	<!-- References -->
 

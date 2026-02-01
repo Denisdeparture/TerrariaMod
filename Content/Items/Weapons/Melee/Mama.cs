@@ -22,6 +22,7 @@ namespace DuckBleach.Content.Items.Weapons.Melee
 
         public override bool? UseItem(Player player)
         {
+			const string AttackShader = "Bankai";
            
             if (Main.keyState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Q))
             {
@@ -35,24 +36,24 @@ namespace DuckBleach.Content.Items.Weapons.Melee
 
 				if(Main.time == GlobalTimer)
 				{
-                    Filters.Scene.Deactivate($"{DuckBleach.CalamityShaderPrefix}{DuckBleach.ShaderName}");
+                    Filters.Scene.Deactivate($"{EffectManager.DuckShaderPrefix}{AttackShader}");
 					IsFirst = true;
                 }
 
                 float lerpAmount = Main.GameUpdateCount % 60 / 60f;
 
-                var shader = Filters.Scene[$"{DuckBleach.CalamityShaderPrefix}{DuckBleach.ShaderName}"].GetShader();
+                var shader = Filters.Scene[$"{EffectManager.DuckShaderPrefix}{AttackShader}"].GetShader();
 
                 
 				
 
                 shader.Shader.Parameters["uTime"].SetValue(lerpAmount);
 
-                Filters.Scene.Activate($"{DuckBleach.CalamityShaderPrefix}{DuckBleach.ShaderName}");
+                Filters.Scene.Activate($"{EffectManager.DuckShaderPrefix}{AttackShader}");
             }
 			else
 			{
-                Filters.Scene.Deactivate($"{DuckBleach.CalamityShaderPrefix}{DuckBleach.ShaderName}");
+                Filters.Scene.Deactivate($"{EffectManager.DuckShaderPrefix}{AttackShader}");
             }
 
 			return base.UseItem(player);
