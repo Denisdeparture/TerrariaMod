@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ITEM = Terraria.Item;
@@ -13,13 +14,6 @@ namespace DuckBleach.Content.Items.Armor.Shinigami
     [AutoloadEquip(EquipType.Body)]
     public class ShinigamiChest : ModItem
     {
-        //public override void Load()
-        //{
-        //    if (Main.netMode != NetmodeID.Server)
-        //    {
-        //        EquipLoader.AddEquipTexture(Mod, "DuckBleach/Content/Items/Armor/Shinigami/ShinigamiChest_Body", EquipType.Body, this);
-        //    }
-        //}
         public override void SetDefaults()
         {
             Item.width = 18;

@@ -40,10 +40,15 @@ namespace DuckBleach
                 {
                     var value = effect.GetValue(null) as HelperResult;
 
+                    DuckBleach.Instance.Logger.Info($"Log shader armor with name {name} and id {value.id}");
+
                     Switcher(typeOp, value.name, value.id);
                 }
                 else
                 {
+                    DuckBleach.Instance.Logger.Info($"Log shader with name {name}");
+
+
                     Switcher(typeOp, name);
                 }
             }
