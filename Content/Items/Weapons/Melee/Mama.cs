@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.IO;
 using Terraria;
@@ -24,7 +25,7 @@ namespace DuckBleach.Content.Items.Weapons.Melee
         {
 			const string AttackShader = "Bankai";
            
-            if (Main.keyState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Q))
+            if (Main.keyState.IsKeyDown(Keys.Q))
             {
 
                 if (IsFirst)
@@ -43,8 +44,6 @@ namespace DuckBleach.Content.Items.Weapons.Melee
                 float lerpAmount = Main.GameUpdateCount % 60 / 60f;
 
                 var shader = Filters.Scene[$"{EffectManager.DuckShaderPrefix}{AttackShader}"].GetShader();
-
-                
 				
 
                 shader.Shader.Parameters["uTime"].SetValue(lerpAmount);

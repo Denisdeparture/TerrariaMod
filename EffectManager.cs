@@ -15,7 +15,7 @@ namespace DuckBleach
     public static class EffectManager
     {
         // Basic confs
-        private const string ShaderPath = "Assets/Effects/";
+        public const string ShaderPath = "Assets/Effects/";
 
         public const string DuckShaderPrefix = "DuckBleach:";
 

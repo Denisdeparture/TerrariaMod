@@ -27,4 +27,12 @@ Items: {
 	}
 }
 
-Projectiles.OnexProjectile.DisplayName: Onex Projectile
+Projectiles: {
+	OnexProjectile.DisplayName: Onex Projectile
+	MegaOnexProjectile.DisplayName: Mega Onex Projectile
+}
+
+Keybinds: {
+	Bankai.DisplayName: Bankai
+	HyperShot.DisplayName: Hyper Shot
+}

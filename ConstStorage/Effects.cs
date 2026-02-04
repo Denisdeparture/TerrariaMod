@@ -13,7 +13,9 @@ namespace DuckBleach.ConstStorage
 
         public static string SceneBankai { get; set; } = "Bankai"; // only name of scene
 
-        public static HelperResult ArmorBankai => Helper.CreateArmorShaderFor<ShinigamiChest>("Shinigami");
+        public static string MiscuBulletEffect { get; set; } = "BulletEffect";
+
+        public static HelperResult ArmorShinigami => Helper.CreateArmorShaderFor<ShinigamiChest>("Shinigami");
 
     }
 
